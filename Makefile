@@ -1,12 +1,13 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99
+CFLAGS = -Wall -Wextra -std=c99 -Isrc/lib
 LDFLAGS = -lglfw3 -lopengl32
 TARGET = main
 
+
 all: $(TARGET)
 
-$(TARGET): main.c
-	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LDFLAGS)
+$(TARGET): src/main.c $(GLAD_SRC)
+	$(CC) $(CFLAGS) -o $(TARGET) src/main.c  $(LDFLAGS)
 
 clean:
 	rm -f $(TARGET) 
