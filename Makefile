@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c99 -Isrc/lib
-LDFLAGS = -lglfw3 -lopengl32
+LDFLAGS = -lglfw3 -lopengl32 -lgdi32
 TARGET = main
 
 

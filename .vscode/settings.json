@@ -2,6 +2,7 @@
     "files.associations": {
         "stdio.h": "c",
         "glfw3.h": "c",
-        "gl.h": "c"
+        "gl.h": "c",
+        "glad.h": "c"
     }
 }
