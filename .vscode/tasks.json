@@ -1,0 +1,66 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: Build Active File",
+            "command": "C:\\w64devkit\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-Isrc/lib",
+                "-Wall",
+                "-Wextra",
+                "-std=c99",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-lglfw3",
+                "-lopengl32",
+                "-lgdi32"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: Build & Run Active File",
+            "command": "C:\\w64devkit\\bin\\gcc.exe",
+            "args": [
+                "${file}",
+                "-Isrc/lib",
+                "-Wall",
+                "-Wextra",
+                "-std=c99",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-lglfw3",
+                "-lopengl32",
+                "-lgdi32"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
